@@ -22,6 +22,12 @@ const config: HardhatUserConfig = {
       }
     ]
   },
+  networks: {
+    sepolia: {
+      url: "https://eth-sepolia.g.alchemy.com/v2/SehYxQpn-EsZ1ZHnOWWQrPuJISy9p9Uk",
+      accounts: ['369e5b22763d6dbbb49a336d4de050b2bf806bc9d8f456aba9397506c0402395']
+    }
+  },
   circom: {
     // (optional) Base path for input files, defaults to `./circuits/`
     inputBasePath: "./circuits",
