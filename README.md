@@ -1,6 +1,4 @@
-# zardkat 🐱
-
-A [hardhat-circom](https://github.com/projectsophon/hardhat-circom) template to generate zero-knowledge circuits, proofs, and solidity verifiers
+# zk-Snark Circom Circuit
 
 ## Quick Start
 Compile the Multiplier2() circuit and verify it against a smart contract verifier
