@@ -1,31 +1,17 @@
 # zk-Snark Circom Circuit
 
 ## Quick Start
-Compile the Multiplier2() circuit and verify it against a smart contract verifier
 
-``
-pragma circom 2.0.0;
+Compile the zkcircuit/circuit.circom and verify it against a smart contract verifier.
 
-/*This circuit template checks that c is the multiplication of a and b.*/  
+### Installation
 
-template Multiplier2 () {  
-
-   // Declaration of signals.  
-   signal input a;  
-   signal input b;  
-   signal output c;  
-
-   // Constraints.  
-   c <== a * b;  
-}
-component main = Multiplier2();
-``
-### Install
-`npm i`
-
+1. Install npm : `npm i`
+   #### ` I recommend doing next step in WSL(window subsystem for linux) or in gitpod so that you won't encounter error related to circom `
+   
 ### Compile
-`npx hardhat compile` 
-This will generate the **out** file with circuit intermediaries and geneate the **MultiplierVerifier.sol** contract
+`npx hardhat circom` 
+This will generate the **out** file with circuit intermediaries and geneate the **ZKCircuitVerifier.sol** contract
 
 ### Prove and Deploy
 `npx hardhat run scripts/deploy.ts`
